@@ -1,0 +1,811 @@
+
+#navbar-wrapper {
+	height:80px;
+	z-index:1000;
+	background:#fff;
+	line-height:80px;
+	position:relative;/*
+	border-bottom:0px solid rgba(86,101,115,1.0);*/
+	box-shadow: 0px 1px 20px rgba(110,130,150,1.0);;
+}
+
+#navbar-wrapper > div {
+	width:95%;
+	margin:0px auto;
+}
+
+#logo-wrapper {
+	width:30%;
+	float:left;
+}
+
+#logo-wrapper img {
+	margin-top:15px;
+	max-height:50px;
+}
+
+#navigation-wrapper {
+	float:right;
+	position:relative;
+}
+
+#navigation-wrapper li {
+	margin:0px 10px;
+	display:inline-block;
+}
+
+#navigation-wrapper a {
+	text-decoration:none;
+	color:rgba(86,101,115,1.0);;
+	font-size:14px;
+}
+
+#navigation-wrapper button {
+	color:#fff;
+    border:none;
+    height:40px;
+    padding:0px 20px;
+    border-radius:5px;
+    font-size:inherit;
+    -webkit-border-radius:5px;
+    background:rgba(86,101,115,1.0);
+}
+
+#slogan {
+	color:#fff;
+	width:100%;
+	padding:50px 0px;
+	font-size:2.25vw;
+	text-align:center;
+}
+
+
+#about {
+	color:rgba(100,110,130,1.0);
+	margin:100px 0px;
+}
+
+#about > div {
+	min-height:750px;
+}
+
+#about > div > div:first-child {
+	font-size:20px;
+	color:#ffffff;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+#about > div > div:last-child > div {
+	width:31%;
+	float:left;
+	margin:10px 1%;
+	overflow:hidden;
+	min-height:320px;
+	border-radius:5px; 
+	display:inline-block;
+	-webkit-border-radius:5px;
+}
+
+#about > div > div:last-child > div > div:first-child {
+	height:175px; 
+	overflow:hidden;
+	text-align:center;
+	background:rgba(255,255,255,1.0);
+}
+
+#about > div > div:last-child > div > div:first-child img {
+	width:80%;
+	margin-top:-45px;
+	max-height:auto;/*
+	filter:invert(.5);
+	-webkit-filter:invert(.5);*/
+}
+
+#about > div > div:last-child > div > div:last-child {
+	padding:20px;
+	min-height:145px;
+	background:#f9f9f9;
+}
+
+
+
+/*****************************************/
+
+
+
+#how-it-works {
+	margin:75px 0px;
+	position:relative;
+}
+
+#how-it-works > div > div:first-child { 
+	color:#ffffff;
+	font-size:20px;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+#how-it-works > div > div:last-child > div:first-child {
+	color:#ffffff;
+	font-size:13px;
+	overflow:hidden;
+	padding:20px 20px 20px 20px;
+	border-radius:5px 5px 0px 0px;
+	background:rgba(100,110,130,1.0);
+	-webkit-border-radius:5px 5px 0px 0px;
+}
+
+#how-it-works > div > div:last-child {
+	overflow:hidden;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#how-it-works > div > div:last-child > div:last-child {
+	padding:20px;
+	background:#f9f9f9;
+}
+
+
+
+/************************************/
+
+
+
+
+#action-sign-up {
+	color:#ffffff;
+	overflow:hidden;
+	text-align:center;
+	position:relative;
+}
+
+#action-sign-up > div:first-child {
+	top:0px;
+	left:0px;
+	right:0px;
+	z-index:1;
+	bottom:0px;
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+
+#action-sign-up > div:first-child img {
+	top:-5%;
+	width:100%;
+	height:auto;
+	transform:translateY(-5%);
+	-webkit-transform:translateY(-5%);
+}
+
+#action-sign-up > div:last-child {
+	z-index:2;
+	position:relative;
+	padding:100px 0px;
+	background:rgba(50,80,130,0.8);
+}
+
+#action-sign-up h2{
+	font-size:38px;
+	margin:20px 0px;
+}
+
+#action-sign-up p {
+	font-size:18px;
+}
+
+#action-sign-up b {
+	font-size:18px;
+	font-weight:600 !important;
+}
+
+#action-sign-up > div:last-child > div:last-child {
+	margin-top:40px;
+}
+
+#action-sign-up > div:last-child > div:last-child > div {
+	display:inline-block;
+	margin:25px 20px 40px 20px;
+}
+
+#action-sign-up > div:last-child > div:last-child > div:first-child button {
+	border:none;
+	color:#ffffff;
+	font-size:16px;
+	padding:15px 20px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	background:rgba(80,130,250,1.0);
+}
+
+#action-sign-up > div:last-child > div:last-child > div:last-child a  {
+	color:#fff;
+	font-size:16px;
+}
+
+
+
+
+/*************** create-account.php / sign-in.php / forgotten-password.php start *****************/
+
+
+
+#login-wrapper {
+	width:400px;
+	background:#fff;	
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	margin:8vh auto 15vh auto;
+}
+
+.sign-in-wrapper {
+	margin:15vh auto 35vh auto !important;
+}
+
+#login-wrapper > div {
+	padding:20px;
+}
+
+#login-wrapper h1 {
+	font-size:32px;
+}
+
+#login-wrapper > div > div:nth-child(2) {
+	margin:20px 0px;
+}
+
+#login-wrapper > div > div:nth-child(2) div {
+	padding:10px 0px;
+}
+
+#login-wrapper > div > div:nth-child(2) input {
+	width:100%;
+	height:40px;
+	font-size:16px;
+	padding:0px 10px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	-webkit-border-radius:5px;
+}
+
+.CA_pick_games > div:last-child div {
+	padding:0px !important;
+}
+
+#login-wrapper > div > div:nth-child(2) > form > .CA_pick_games {
+	height:175px;
+	padding:10px 0px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	margin:15px 0px !important;
+}
+
+#login-wrapper > div > div:nth-child(2) > form > .CA_pick_games > div:first-child {
+	height:30px;
+	padding:0px 10px;
+	line-height:30px;
+	overflow: hidden;
+}
+
+#login-wrapper > div > div:nth-child(2) > form > .CA_pick_games > div:last-child > div {
+	float:left;
+	width:100px;
+	height:100px;
+	cursor:pointer;
+	margin:0px 10px;
+	overflow:hidden;
+	text-align:center;
+	position:relative;
+	display:inline-block;
+
+	border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.checkPickerMarker {
+	position: absolute;
+	z-index:3;
+	top:0px;
+	right:0px;
+	left:0px;
+	bottom:0px;
+	width:100px;
+	height:100px;
+}
+
+.checkPickerMarker img {
+	top:10px;
+	max-width:75px;
+	max-height:75px;
+}
+
+.blur {
+	filter:blur(4px) !important;
+	-webkit-filter:blur(4px) !important;
+}
+
+#login-wrapper > div > div:nth-child(2) > form > .CA_pick_games > div:last-child > div > div:first-child img {
+	z-index:1;
+	height:100px;
+	min-width:100px;
+	filter:blur(2px);
+	max-width:auto !important;
+	transition: all 0.35s;
+	-webkit-transition: all 0.35s;
+}
+
+#login-wrapper > div > div:nth-child(2) > form > .CA_pick_games > div:last-child > div:hover > div:first-child img {
+	filter:blur(1px);
+}
+
+#login-wrapper > div > div:nth-child(2) > form > .CA_pick_games > div:last-child > div > div:last-child img {
+	left:0px;
+	right:0px;
+	z-index:2;
+	max-width:80%;
+	margin:0px auto;
+	max-height:80px;
+	position:absolute;
+	filter:invert(1);
+	-webkit-filter:invert(1);
+}
+
+#login-wrapper > div > div:nth-child(2) > form > .CA_pick_games > div:last-child > div:first-child > div:last-child img,
+#login-wrapper > div > div:nth-child(2) > form > .CA_pick_games > div:last-child > div:nth-child(2) > div:last-child img {
+	bottom:40px;
+}
+
+#login-wrapper > div > div:nth-child(2) > form > .CA_pick_games > div:last-child > div:nth-child(3) > div:last-child img {
+	bottom:35px;
+}
+
+#login-wrapper > div > div:last-child {
+	height:20px;
+	position: relative;
+	padding:5px 5px 0px 5px;
+	border-top:1px solid #ddd;
+}
+
+#login-wrapper > div > div:last-child > div {
+	width:50%;
+	float:left;
+	display:inline-block;
+}
+
+#login-wrapper > div > div:last-child > div:last-child {
+	text-align:right;
+}
+
+#login-wrapper > div > div:last-child > div a {
+	color:#000000;
+	font-size:15px;
+	text-decoration:none;
+}
+
+.big_btn {
+	width:100%;
+	font-size:16px;
+	padding:0px 0px;
+	height:50px !important;
+	border:none !important;
+}
+
+.CA_btm div {
+	text-align:right;
+	width:100% !important;
+}
+
+
+
+/***************** create-account.php / sign-in.php / forgotten-password.php end *******************/
+
+
+
+/***************** about-gamingbuddy.php start *****************/
+
+.about-gamingbuddy-page-wrapper {
+	position: relative;
+	background:rgba(250,250,250,0.95);
+}
+
+.about-gamingbuddy-page-wrapper > div {
+	width:95%;
+	min-height:50vh;
+	margin:0px auto;
+	padding:50px 0px 100px 0px;
+}
+
+.about-gamingbuddy-page-wrapper > div > div:first-child {
+	width:100%;
+	min-height:200px;
+	position:relative;
+}
+
+.about-gamingbuddy-page-wrapper > div > div:first-child > div {
+	width:84%;
+	float:right;
+}
+
+.about-gamingbuddy-page-wrapper > div > div:first-child h1 {
+	font-size:48px;
+	margin:0px 0px 20px 0px;
+}
+
+.about-gamingbuddy-page-wrapper > div > div:first-child h2 {
+	font-size:28px;
+	margin:0px 0px 20px 0px;
+}
+
+.about-gamingbuddy-page-wrapper > div > div:first-child > div > div:last-child {
+	padding:0px;
+}
+
+.about-gamingbuddy-page-wrapper > div > div:first-child > div > div:last-child > div {
+	color:#fff;
+	font-size:16px;
+	margin:10px 10px;
+	padding:10px 20px;
+	border-radius:100px;
+	display:inline-block;
+	-webkit-border-radius:100px;
+	background:rgba(200,200,200,1.0);
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div {
+	margin-top:50px;
+	padding-top:50px;
+	border-top:1px solid rgba(200,200,200,1.0);
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:first-child {
+	width:15%;
+	float:left;
+	display:inline-block;
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:first-child > div {
+	width:75px;
+	margin:0px auto;
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:first-child > div > div:nth-child(2) {
+	width:75px;
+	height:75px;
+	color:#ffffff;
+	font-size:22px;
+	line-height:75px;
+	text-align:center;
+	border-radius:100px;
+	-webkit-border-radius:100px;
+	background:rgba(200,200,200,1.0);	
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:first-child >  div > div:first-child,
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:first-child >  div > div:last-child {
+	width:75px;
+	position:relative;
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:first-child >  div > div:first-child > div {
+	width:1px;	
+	height:100px;
+	margin:0px auto;
+	background:rgba(200,200,200,1.0);	
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:first-child >  div > div:last-child > div {
+	width:1px;
+	height:50vh;
+	margin:0px auto;
+	background:rgba(200,200,200,1.0);	
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:last-child {
+	width:84%;
+	min-height:50vh;
+	position:relative;
+	display:inline-block; 
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:last-child > div:first-child {
+	width:100%;
+	height:350px;
+	overflow:hidden;
+	position:relative;
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:last-child > div:first-child img {
+	top:-10%;
+	width:100%;
+	min-height:350px;
+	transform:translateY(-10%);
+	-webkit-transform:translateY(-10%);
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:last-child > div:nth-child(2) h2 {
+	font-size:38px;
+	margin:20px 0px;
+}
+
+.about-gamingbuddy-page-wrapper > div > div:last-child > div > div:last-child > div:nth-child(2) p {
+	font-size:20px;
+}
+
+.theaderr h2 {
+	font-size:38px;
+}
+
+.theteamtopeer,
+.theteamtopeer > div {
+	min-height:100vh !important;
+}
+
+.about-gamingbuddy-page-wrapper .team-about {
+	width:100%;
+	height:175px;
+	overflow:hidden;
+	background:#ddd;
+	margin-top:20px;
+}
+
+.about-gamingbuddy-page-wrapper .team-about > div:first-child {
+	width:15%; 
+}
+
+.about-gamingbuddy-page-wrapper .team-about > div:last-child {
+	width:85%; 
+	padding:20px 50px 20px 30px;
+}
+
+.about-gamingbuddy-page-wrapper .team-about > div:last-child > div:first-child h2 {
+	font-size:30px;
+}
+
+.about-gamingbuddy-page-wrapper .team-about > div:last-child > div:last-child p {
+	font-size:20px;
+}
+
+.about-gamingbuddy-page-wrapper .team-about > div:first-child > div {
+	width:175px;
+	height:175px; 
+	overflow: hidden; 
+}
+
+.about-gamingbuddy-page-wrapper .team-about > div:first-child > div  img {
+	top:0px !important;
+	width: auto !important;
+	max-width:1000% !important;
+	min-width:175px !important; 
+	height:175px !important;
+	transform:translateY(0%) !important;
+	-webkit-transform:translateY(0%) !important;
+}
+
+.about-gamingbuddy-page-wrapper .team-about > div {
+	float:left;
+	display: inline-block;
+}
+
+
+/***************** about-gamingbuddy.php end *****************/
+
+
+
+/***************** terms-and-conditions.php start *****************/
+
+.terms-and-conditions-page-wrapper {
+	position: relative;
+	background:rgba(250,250,250,0.95);
+}
+
+.terms-and-conditions-page-wrapper > div {
+	width:95%;
+	min-height:50vh;
+	margin:0px auto;
+	padding:50px 0px;
+}
+
+.terms-and-conditions-page-wrapper > div > div:last-child > div {
+	margin-bottom:35px;
+}
+
+.terms-and-conditions-page-wrapper h1 {
+	font-size:48px;
+}
+
+.terms-and-conditions-page-wrapper h2 {
+	font-size:36px;
+}
+
+.terms-and-conditions-page-wrapper p {
+	font-size:18px;
+}
+
+.terms-and-conditions-page-wrapper b {
+	font-weight:600 !important;
+}
+
+/***************** terms-and-conditions.php end *****************/
+
+
+
+/***************** contact-us.php start *****************/
+
+.contact-us-page-wrapper {
+	width:100%;
+	min-height:80vh;
+	position: relative;
+	background:rgba(250,250,250,0.95);
+}
+
+.contact-us-page-wrapper > div {
+	width:1100px;
+	min-height:80vh;
+	margin:0px auto;
+	padding:50px 0px; 
+	position: relative;
+}
+
+.contact-us-page-wrapper > div > div {
+	float:left;
+	display: inline-block;
+}
+
+.contact-us-page-wrapper > div > div:first-child {
+	width:40%;
+}
+
+.contact-us-page-wrapper > div > div:last-child {
+	width:60%;
+}
+
+.contact-us-page-wrapper > div > div:last-child > div {
+	top:110px;
+	padding:0px 50px;
+	position: relative;
+}
+
+.contact-us-page-wrapper > div > div:last-child img {
+	max-width:60%;
+	max-height: 50px;
+}
+
+.contact-us-page-wrapper a {
+	color:inherit;
+}
+
+.contact-us-page-wrapper > div > div:last-child > div > div:last-child {
+	margin-top:20px;
+}
+
+.contact-us-page-wrapper h1 {
+	font-size:40px;
+} 
+
+.contact-us-page-wrapper p {
+	font-size:20px;
+} 
+
+.contact-us-page-wrapper > div > div:first-child > div:last-child {
+	margin-top:35px;
+	width:100%;
+}
+ 
+.contact-us-page-wrapper > div > div:first-child > div:last-child > form > div {
+	margin:20px 0px;
+}
+
+.contact-us-page-wrapper > div > div:first-child > div:last-child input[type="text"],
+.contact-us-page-wrapper > div > div:first-child > div:last-child input[type="email"] {
+	width:100%;
+	height:40px;
+	font-size:16px;
+	padding:0px 10px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	-webkit-border-radius:5px;
+}
+
+.contact-us-page-wrapper > div > div:first-child > div:last-child textarea {
+	width:100%;
+	resize:none;
+	height:150px;
+	font-size:16px;
+	padding:10px 10px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	-webkit-border-radius:5px;
+}
+
+.contact-us-page-wrapper > div > div:first-child > div:last-child > form > div:last-child {
+	height:100px;
+}
+
+.contact-us-page-wrapper input[type="submit"] {
+	width:150px;
+	height:50px;
+	border:none;
+	float:right;
+	font-size:16px;
+}
+
+
+/***************** contact-us.php end *****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************** overall footer ******************/
+
+ 
+
+#footer > div {
+	width:1100px;
+	margin:0px auto;
+	padding:50px 0px 0px 0px;
+}
+
+#footer > div > div {
+	float:left;
+	max-width:33%;
+	min-width:25%;
+	display: inline-block;
+}
+
+#footer > div > div > div:first-child * {
+	font-weight:900 !important;
+}
+
+#footer > div > div > div:last-child {
+	margin-top:20px;
+}
+
+#footer a {
+	color:#fff;
+	text-decoration: none;
+}
+
+#footer > div > div:nth-child(2) > div:last-child li {
+	padding:2px 0px;
+}
+
+#footer > div > div:first-child > div:last-child {
+	margin-left:-15px;
+}
+
+#footer > div > div:first-child > div:last-child ul {
+	margin:20px auto 20px auto;
+}
+
+#footer > div > div:first-child > div:last-child li {
+	width:50px;
+	text-align:center;
+	display:inline-block;
+}
+
+#footer > div > div:first-child > div:last-child li img {
+	width:35px;
+	max-height:60px;
+}
+
+#footer > div > div > div:last-child li a:hover {
+	text-decoration:underline;
+}
+
+
+
+
+
+

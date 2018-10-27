@@ -1,0 +1,158 @@
+RewriteEngine on
+Options -MultiViews
+
+############# REMOVE FILE EXTENSION #############
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^(.*)$ $1.php  
+
+############# ONLY ACCESS BY HTTPS://WWW.* #############
+
+#RewriteCond %{HTTPS} off [OR]
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+#RewriteRule ^ https://www.%1%{REQUEST_URI} [L,NE,R=301]
+
+############# INDEX RENAME #############
+
+DirectoryIndex gamingbuddy.php
+
+############# HTTP STATUS CODE ERROR-HANDLER #############
+
+#ErrorDocument 403 https://www.gamingbuddy.eu/error/403
+#ErrorDocument 404 https://www.gamingbuddy.eu/error/404
+#ErrorDocument 500 https://www.gamingbuddy.eu/error/500
+#ErrorDocument 503 https://www.gamingbuddy.eu/error/503
+#ErrorDocument 504 https://www.gamingbuddy.eu/error/504
+
+############# GZIP COMPRESSIONS #############
+
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+<files *.html>
+SetOutputFilter DEFLATE
+</files>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# redirect "/section.php?id=xxx" to "/section/xxx"
+#RewriteCond %{THE_REQUEST} \s/teacher\.php\?id=([0-9]+)\s [NC]
+#RewriteRule ^ /teacher/%1? [R=301,L]
+
+# internally rewrite "/teacher/xxx" to "/teacher.php?id=xxx"
+#RewriteRule ^teacher/([0-9]+)$ /teacher.php?id=$1 [L]
+
+
+
+
+
+#RewriteEngine On
+
+#RewriteCond %{REQUEST_FILENAME} -s [OR]
+#RewriteCond %{REQUEST_FILENAME} -l [OR]
+#RewriteCond %{REQUEST_FILENAME} -d
+#RewriteRule ^.*$ - [NC,L]
+#RewriteRule ^.*$ index.php [NC,L]
+#
+#Options All -Indexes 
+#Options All -Indexes 
+#Options All -Indexes
+
+
+#
+#make user profile look nice in URL
+#
+#Options +FollowSymLinks
+#RewriteEngine On
+#
+#RewriteRule index/locale/(.*)/id/(.*)/ index.php?locale=$1&id=$2
+#RewriteRule index/locale/(.*)/id/(.*) index.php?locale=$1&id=$2
+
+
+
+
+#disallow .php enter +- remove ext
+
+#RewriteEngine On
+
+# Sets your index script
+#RewriteRule ^$ index.php [L]
+
+# Condition prevents redirect loops (when script is not found)
+#RewriteCond %{ENV:REDIRECT_STATUS} !^$
+#RewriteCond %{REQUEST_FILENAME} !-f
+
+# Stop here if the file is not found after a redirect
+#RewriteRule ^(.*)$ notfound.php [L]
+
+# Condition prevents redirect loops (when script is found)
+#RewriteCond %{ENV:REDIRECT_STATUS} ^$
+
+# Forbid access directly to PHP files
+#RewriteRule ^.*?\.php$ forbidden [F,L]
+
+# Make sure the filename does not actually exist (images, etc.)
+#RewriteCond %{REQUEST_FILENAME} !-f
+
+# Append the .php extension to the URI
+#RewriteRule ^(.*)$ $1.php [L] 
+
+
+
+
+
+
+
+
+
+
+
+
+
